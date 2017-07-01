@@ -23,12 +23,17 @@ public class TestSkunkApp {
 		
 	}
 	
+	
 	@Test
-	public void testRollDie()
+	public void canCreateRoll()
 	{
-		assertEquals(0, game.getRollpoint() );
-		
+		Roll roll = new Roll();
+		assertTrue(roll.getLastTotal()<=12);
+		assertTrue(roll.getLastTotal()>=2);
 	}
+	
+	//Testing multiple commit
+	
 		
 	
 	

@@ -27,6 +27,7 @@ public class SkunkApp {
 
 	public int getRollpoint() {
 				
+		
 		return 0;
 		
 	}
