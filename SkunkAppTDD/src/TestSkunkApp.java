@@ -22,6 +22,13 @@ public class TestSkunkApp {
 		assertEquals("Player 2", game.getPlayerName(2));
 		
 	}
+	
+	@Test
+	public void testRollDie()
+	{
+		assertEquals(0, game.getRollpoint() );
+		
+	}
 		
 	
 	

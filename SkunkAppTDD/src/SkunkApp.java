@@ -25,4 +25,10 @@ public class SkunkApp {
 		return playerName[i-1];
 	}
 
+	public int getRollpoint() {
+				
+		return 0;
+		
+	}
+
 }
