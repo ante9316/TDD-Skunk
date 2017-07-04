@@ -1,3 +1,4 @@
+
 import static org.junit.Assert.*;
 
 import org.junit.Before;
@@ -25,11 +26,18 @@ public class TestSkunkApp {
 	
 	
 	@Test
-	public void canCreateRoll()
+	public void testCanCreateRoll()
 	{
 		Roll roll = new Roll();
 		assertTrue(roll.getLastTotal()<=12);
 		assertTrue(roll.getLastTotal()>=2);
+	}
+	
+	@Test
+	public void testCanCheckSkunkRoll()
+	{
+		Roll roll = new Roll();
+		assertEquals(0,roll.getLastTotal());
 	}
 	
 	//Testing multiple commit
