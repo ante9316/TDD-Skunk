@@ -14,10 +14,21 @@ public class Roll {
 		return (int) Math.random()*6+1;
 	}
 
-	public int getLastTotal() {
-		
-		
+	public int getLastTotal() {			
 		return lastTotal;
+	}
+
+	public int isSkunkRolled() 
+	{
+		while(rollDie()==1)
+		{
+			if(rollDie()==1)
+			{
+				return 0;
+			}
+		}
+		return lastTotal;
+		
 	}
 
 }

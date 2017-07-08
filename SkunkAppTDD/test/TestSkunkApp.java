@@ -15,7 +15,7 @@ public class TestSkunkApp {
 	}
 	
 	@Test
-	public void testGePlayerInfo()
+	public void testGetPlayerInfo()
 	{
 		game.getPlayerInfo();
 		assertEquals(2, game.getNumberOfPlayers());
@@ -37,12 +37,9 @@ public class TestSkunkApp {
 	public void testCanCheckSkunkRoll()
 	{
 		Roll roll = new Roll();
-		assertEquals(0,roll.getLastTotal());
+		assertEquals(0,roll.isSkunkRolled());
 	}
-	
-	//Testing multiple commit
-	
-	//Testing second commit
+
 		
 	
 	
